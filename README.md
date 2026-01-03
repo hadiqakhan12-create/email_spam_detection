@@ -1,5 +1,5 @@
 Email Spam Detection using Random Forest
-This project is part of my Data Science Internship (Task 1). It demonstrates a complete machine learning pipeline to classify emails as Spam or Ham (Legitimate) using the Spambase dataset.
+This project is part of Machine Learning Internship (Task 1). It demonstrates a complete machine learning pipeline to classify emails as Spam or Ham (Legitimate) using the Spambase dataset.
 
 📌 Project Overview
 The objective of this project is to build an automated system that identifies spam emails based on word and character frequencies. By leveraging the Random Forest Classifier, the model can accurately distinguish between legitimate communications and unsolicited spam.
