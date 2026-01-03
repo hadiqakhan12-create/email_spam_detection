@@ -1,39 +1,48 @@
-Email Spam Detection using Machine Learning
-This repository contains my Task 1 project for my Data Science Internship. The project uses Machine Learning to identify whether an email is "Spam" or "Ham" (Legitimate) based on statistical features.
+Email Spam Detection using Random Forest
+This project is part of my Data Science Internship (Task 1). It demonstrates a complete machine learning pipeline to classify emails as Spam or Ham (Legitimate) using the Spambase dataset.
 
-📌 Project Concept
-In this project, I used the Spambase Dataset, which represents emails not as raw text, but as a collection of numerical data. These features describe the frequency of specific words (like "money", "free", or "offer") and characters (like "!" or "$").
+📌 Project Overview
+The objective of this project is to build an automated system that identifies spam emails based on word and character frequencies. By leveraging the Random Forest Classifier, the model can accurately distinguish between legitimate communications and unsolicited spam.
+
+📊 Dataset Information
+I utilized the Spambase Dataset, which includes:
+
+Total Samples: 4,601 emails.
+
+Features: 57 numerical attributes representing word and character frequencies (e.g., "free", "money", "!").
+
+Target: class (1 for Spam, 0 for Ham).
 
 🛠️ Implementation Steps
-I have organized the Jupyter Notebook into clear, modular steps:
+The project is organized into clear, sequential steps within the Jupyter Notebook:
 
-Data Loading: Importing the CSV file into a Pandas DataFrame.
+Environment Setup: Importing pandas, sklearn, and visualization libraries (seaborn, matplotlib).
 
-Exploratory Data Analysis (EDA): Checking the balance between spam and ham messages.
+Data Loading: Reading the spambase_csv.csv file into a DataFrame.
 
-Data Splitting: Using a train-test split to ensure the model can generalize to new emails.
+Exploratory Analysis: Inspecting the data structure and checking the balance between Spam (1,813) and Ham (2,788) samples.
 
-Model Selection: Implementing the Random Forest Classifier—an ensemble learning method.
+Data Preparation: Splitting the data into features (X) and target labels (y), followed by an 80/20 train-test split.
 
-Evaluation: Visualizing results through a Confusion Matrix and Accuracy Score.
+Model Training: Training a Random Forest Classifier with 100 estimators.
 
-📊 Technical Stack
-Environment: Anaconda & Jupyter Notebook
+Evaluation: Calculating model accuracy and generating a confusion matrix to visualize performance.
 
+💻 Tech Stack
 Language: Python
 
-Key Libraries: Pandas, Scikit-learn, Matplotlib, Seaborn
+Environment: Anaconda / Jupyter Notebook
 
-📈 Model Results
-The Random Forest model performed exceptionally well on this dataset:
+Libraries: Pandas, Scikit-learn, Matplotlib, Seaborn
 
-Accuracy: [Insert your Accuracy, e.g., 95.8%]
+📈 Model Performance
+Algorithm: Random Forest Classifier
 
-Robustness: The model effectively identifies patterns in word frequencies to distinguish spam.
+Accuracy: 95.4%
 
-📂 Project Structure
-spambase_csv.csv: The processed email dataset.
+📂 Repository Structure
+email_spam_detection.ipynb: The full Python implementation with step-by-step documentation.
 
-Spam_Detection.ipynb: The complete Python code with step-by-step documentation.
+spambase_csv.csv: The dataset used for training and testing.
 
-README.md: Project description and documentation.
+README.md: Project documentation.
